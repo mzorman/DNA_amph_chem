@@ -1,0 +1,4 @@
+## Description of files in this folder ##
+- Files starting with R denote R12 stereochemistry
+- Files starting with SR denote (RS)_6 stereochemistry
+- Files with 4 or 6 in the middle denote that the given stereocenter(s) has been flipped

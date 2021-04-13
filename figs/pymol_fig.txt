@@ -1,0 +1,32 @@
+## script used to make pymol figs ##
+## works for both tubes and single molecules ##
+
+# prep structure
+hide all
+remove hydrogens
+extract chainA, chain A
+extract chainB, chain B
+extract mg, ele Mg
+
+# chain A rep
+show spheres, chainA
+set sphere_scale, 0.85, chainA
+set sphere_scale, 1, chainA and (elem P or elem O)
+
+util.cbaw chainA
+
+# chain B rep
+show sticks, chainB
+set stick_radius, 1
+color deepteal, chainB
+
+# mg rep
+show spheres, mg
+set sphere_scale, 0.9, mg
+color deeppurple, mg
+
+# lighting
+#set light_count, 1
+#set ambient, 0.25
+#set spec_power, 1500
+#set spec_reflect, 2
