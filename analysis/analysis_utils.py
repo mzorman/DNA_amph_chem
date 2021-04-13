@@ -8,12 +8,14 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from math import pi
 from numpy import *
-import numpy as np
+import numpy as np # ugh
 import pickle
 
 #-------------------------------------------------------------------------------
 ## ANALYSIS TOOLS DUMP FOR DNA AMPHIPHILE CHEM PAPER ##
 ## many of these functions were not utilized in analysis for the final paper ##
+## functions used to fit a circle to backbone atoms were adapted from: ## 
+## https://meshlogic.github.io/posts/jupyter/curve-fitting/fitting-a-circle-to-cluster-of-3d-points/ ##
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
