@@ -1,5 +1,6 @@
 ## Description of files in this folder ##
-## these are the structures used to in simulations of single molecules and pre-assembled tubes ##
+## these are the structures used to generate the pre-assembled tubes ##
 - Files starting with R denote R12 stereochemistry
 - Files starting with SR denote (RS)_6 stereochemistry
 - Files with 4 or 6 in the middle denote that the given stereocenter(s) has been flipped
+- Files labeled curve_topCand are those used as monomeric units

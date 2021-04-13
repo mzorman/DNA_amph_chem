@@ -1,4 +1,5 @@
 ## Description of files in this folder ##
+## These are the structures and Pymol environments used to make figures ## 
 - Files starting with R denote R12 stereochemistry
 - Files starting with SR denote (RS)_6 stereochemistry
 - Files with 4 or 6 in the middle denote that the given stereocenter(s) has been flipped

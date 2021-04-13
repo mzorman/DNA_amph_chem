@@ -16,6 +16,8 @@ This repository is a supplement to the methods and SI of (DOI) and allows the us
 
 *pymol_fig.txt* -- Used to set representations, colors, lighting, etc, of amphiphiles in Pymol.
 
+*structs/* -- Contains 
+
 ### Dependencies
 * Schrodinger
 * Pymol
