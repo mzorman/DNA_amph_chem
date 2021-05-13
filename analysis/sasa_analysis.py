@@ -9,30 +9,29 @@ import sys
 
 #-------------------------------------------------------------------------------
 ## Script to generate SASA plots for DNA amph chem paper ##
-## user must suply job filenames and paths
+## user must suply job filenames and paths ##
 #-------------------------------------------------------------------------------
 
 # define jobnames and path
-files = ["C88_single_85C_MD", "C88_single_85C_lowMg_MD"]
+files = ["RS_jobname", "R_jobname"]
 path = "/home/you/wherever/you/run/jobs/"
-path = "/home/marlo/HDD/desmond_jobs/jobs/hanadi/C8/"
 fig_name = "test"
 job_len = 100 #ns
 
 #-------------------------------------------------------------------------------
 # iterate through files and get SASA
-all_results = [] 
+all_results = []
 for file in files:
     print(file)
     # check for pickle file
-    if exists("../data/" + file + "_SASA.p"):
+    if exists("data/" + file + "_SASA.p"):
         results = pickle.load(open("data/" + file + "_SASA.p", "rb"))
     else:
         location_in = path + file + "/" + file + "-in.cms"
         location_traj = path + file + "/" + file + "_trj/"
 
         msys_model, cms_model = topo.read_cms(location_in)
-        trj = traj.read_traj(location_traj)[::100] # full trajectories take a long time, for testing try skipping frames
+        trj = traj.read_traj(location_traj)[::10] # full trajectories take a long time, for testing try skipping frames
         # trj = trj[::int(len(trj)/300)]
 
         sasa = analysis.SolventAccessibleSurfaceArea(msys_model, cms_model, asl="chain A", resolution=0.2)
