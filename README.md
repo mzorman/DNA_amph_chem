@@ -5,18 +5,20 @@ DNA nanostructures are highly addressable and compatible with biological systems
 
 
 ### Description
-This repository is a supplement to the methods and SI of (DOI) and allows the user to replicate all molecular dynamics work. It includes simulation input structures, figure scripts/structures, and analysis scripts. Trajectory data is not included here but is available upon request. Simulations and analysis were done using the Schrodinger Suite, and figures were made using Pymol.
+This repository is a supplement to the methods and SI of (DOI) and allows the user to replicate all molecular dynamics work. It includes simulation input structures, figure scripts/structures, and analysis scripts/data. Trajectory coordinates are not included here but are available upon request. Simulations and analysis were done using the Schrodinger Suite, and figures were made with Pymol and Matplotlib.
 
 ### Files
-*analysis_utils.py* -- Contains analysis utility scripts. Functions used to fit a circle to backbone atoms of the hydrophobic core were adapted from [Fitting a Circle to Cluster of 3D Points](https://meshlogic.github.io/posts/jupyter/curve-fitting/fitting-a-circle-to-cluster-of-3d-points/). Contains some analysis code that was not used in the final manuscript but may be useful.
+*analysis_utils.py* -- Contains analysis utility scripts. Functions used to fit a circle to backbone atoms of the hydrophobic core were adapted from [Fitting a Circle to Cluster of 3D Points](https://meshlogic.github.io/posts/jupyter/curve-fitting/fitting-a-circle-to-cluster-of-3d-points/). Contains some analysis code that was not used in the final manuscript but which may be useful.
 
 *circle_fitting.py* -- Used to find the conformations from the trajectory of a single amphiphile that best represent a monomeric unit. It produces a time-plot of scores and a csv file listing top conformation candidates (frames) and scores.
 
-*sasa_analysis.py* -- Calculates and plots the non-DNA solvent accessible surface area (SASA) of amphiphiles.
+*sasa_analysis.py* -- Calculates and plots the non-DNA solvent accessible surface area (SASA) of amphiphiles. Used for both single molecules and tubes
 
-*pymol_fig.txt* -- Used to set representations, colors, lighting, etc, of amphiphiles in Pymol.
+*replica_sasa_analysis.py* -- Calculates and plots the non-DNA solvent accessible surface area (SASA) range of all amphiphile replicas.
 
-*structs/* -- Contains 
+*pymol_fig.txt* -- Used to set representations, colors, lighting, etc, of structures in Pymol.
+
+*structs/* -- Contains all input structures used for simulations
 
 ### Dependencies
 * Schrodinger
