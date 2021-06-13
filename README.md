@@ -1,4 +1,5 @@
 ## Thermosetting supramolecular polymerisation of compartmentalised DNA fibres with stereo-sequence and length control
+![DOI]
 (https://zenodo.org/badge/357632126.svg)
 
 Michael D. Dore, Tuan Trinh, Marlo Zorman, Donatien de Rochambeau, Casey M.Platnich. Pengfei Xu, Xin Luo, Jacob M. Remington, Violeta Toader, Gonzalo Cosa, Jianing Li, *Hanadi F. Sleiman*.
